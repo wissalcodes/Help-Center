@@ -23,12 +23,12 @@ export default function RootLayout({
         <ChakraProvider cssVarsRoot="body">
           <div className="flex flex-col lg:flex-row overflow-x-hidden ">
             {/* Sidebar */}
-            <aside className="w-full lg:w-[30vw] bg-white shadow-md border-2 border-orange-500 lg:fixed lg:h-screen lg:top-0 lg:left-0 lg:z-10 p-4">
+            <aside className="w-full lg:w-[350px] xl:w-[400px] bg-white shadow-md border-2 border-orange-500 lg:fixed lg:h-screen lg:top-0 lg:left-0 lg:z-10 p-4">
               <Sidebar />
             </aside>
 
             {/* Main content */}
-            <main className="flex-1  bg-gray-100 lg:ml-[30vw] ">
+            <main className="flex-1  bg-white lg:ml-[350px] xl:ml-[400px] ">
               {children}
             </main>
           </div>
